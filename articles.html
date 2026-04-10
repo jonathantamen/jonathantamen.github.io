@@ -3,132 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Articles - Jonathan L. Tamen</title>
+    <title>Articles - Jonathan Tamen</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            background-color: #f8fafc; /* slate-50 */
-            color: #1e293b; /* slate-800 */
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #ffffff;
+            color: #333333;
         }
     </style>
 </head>
 <body class="flex flex-col min-h-screen">
 
-    <!-- Sticky Navigation -->
-    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-sm shadow-sm">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16 items-center">
-                <div class="flex-shrink-0">
-                    <a href="index.html" class="text-xl font-bold text-slate-800 tracking-tight">Jonathan L. Tamen</a>
+    <!-- Header -->
+    <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto px-6 py-4">
+            <div class="flex flex-col sm:flex-row justify-between items-center">
+                <div class="mb-4 sm:mb-0">
+                    <a href="index.html" class="text-2xl font-bold text-gray-900">Jonathan Tamen</a>
                 </div>
-                <div class="hidden md:flex space-x-8 items-center">
-                    <a href="index.html" class="text-slate-600 hover:text-blue-600 transition-colors">About</a>
-                    <a href="projects.html" class="text-slate-600 hover:text-blue-600 transition-colors">Projects</a>
-                    <a href="articles.html" class="text-blue-600 font-medium transition-colors">Articles</a>
-                    <a href="/assets/resume.pdf" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md font-medium transition-colors shadow-sm">
-                        <i class="fas fa-download mr-2"></i>Download CV
-                    </a>
-                </div>
-                <!-- Mobile menu button -->
-                <div class="md:hidden flex items-center">
-                    <button class="text-slate-600 hover:text-slate-900 focus:outline-none">
-                        <i class="fas fa-bars text-xl"></i>
-                    </button>
-                </div>
+                <nav class="flex space-x-6 items-center text-sm sm:text-base">
+                    <a href="index.html" class="text-gray-600 hover:text-gray-900 transition-colors">About</a>
+                    <a href="projects.html" class="text-gray-600 hover:text-gray-900 transition-colors">Projects</a>
+                    <a href="articles.html" class="font-semibold text-gray-900 border-b-2 border-gray-900 pb-1">Articles</a>
+                    <a href="/assets/resume.pdf" target="_blank" class="bg-gray-100 hover:bg-gray-200 text-gray-900 px-4 py-2 rounded font-medium transition-colors border border-gray-300">View CV</a>
+                </nav>
             </div>
         </div>
-    </nav>
+    </header>
 
     <!-- Main Content -->
-    <main class="flex-grow py-16 px-4 sm:px-6 lg:px-8">
-        <div class="max-w-4xl mx-auto">
-            <div class="mb-12 text-center md:text-left">
-                <h1 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Articles & Publications</h1>
-                <p class="text-lg text-slate-600 max-w-2xl">Thoughts, research findings, and essays on economics, technology, and community building.</p>
-                <div class="w-16 h-1 bg-blue-600 mt-6 md:mx-0 mx-auto rounded"></div>
-            </div>
+    <main class="flex-grow max-w-4xl mx-auto px-6 py-12 w-full">
+        <div class="mb-10">
+            <h1 class="text-3xl font-bold text-gray-900 mb-4">Articles & Publications</h1>
+            <p class="text-lg text-gray-600">Thoughts, research findings, and essays on economics, technology, and community building.</p>
+        </div>
 
-            <!-- Articles List -->
-            <div class="space-y-8">
+        <!-- Articles List -->
+        <div class="space-y-12">
 
-                <!-- Article Item 1 -->
-                <article class="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
-                    <div class="flex flex-col md:flex-row md:items-baseline justify-between mb-2">
-                        <h2 class="text-2xl font-bold text-slate-900 mb-2 md:mb-0">
-                            <a href="#" class="hover:text-blue-600 transition-colors">The Economic Impact of Community Initiatives</a>
-                        </h2>
-                        <time datetime="2023-10-15" class="text-sm font-medium text-slate-500 whitespace-nowrap">October 15, 2023</time>
-                    </div>
-                    <p class="text-slate-600 mb-4 leading-relaxed">
-                        [Placeholder text] An exploration into how localized grassroots movements and community programs like Helping Hands MB generate measurable economic value and social capital within suburban communities.
-                    </p>
-                    <div>
-                        <a href="#" class="text-blue-600 font-medium hover:text-blue-800 transition-colors inline-flex items-center">
-                            Read More <i class="fas fa-arrow-right ml-1 text-xs"></i>
-                        </a>
-                    </div>
-                </article>
+            <!-- Article 1 -->
+            <article class="border-b border-gray-100 pb-10">
+                <time datetime="2023-10-15" class="text-sm text-gray-500 block mb-1">October 15, 2023</time>
+                <h2 class="text-2xl font-bold text-gray-900 mb-3">
+                    <a href="#" class="hover:text-blue-700">The Economic Impact of Community Initiatives</a>
+                </h2>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    [Placeholder text] An exploration into how localized grassroots movements and community programs like Helping Hands MB generate measurable economic value and social capital within suburban communities.
+                </p>
+                <a href="#" class="text-blue-700 hover:underline text-sm font-medium">Read Article &rarr;</a>
+            </article>
 
-                <!-- Article Item 2 -->
-                <article class="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
-                    <div class="flex flex-col md:flex-row md:items-baseline justify-between mb-2">
-                        <h2 class="text-2xl font-bold text-slate-900 mb-2 md:mb-0">
-                            <a href="#" class="hover:text-blue-600 transition-colors">Leveraging Python for Market Analysis</a>
-                        </h2>
-                        <time datetime="2023-08-22" class="text-sm font-medium text-slate-500 whitespace-nowrap">August 22, 2023</time>
-                    </div>
-                    <p class="text-slate-600 mb-4 leading-relaxed">
-                        [Placeholder text] A technical deep-dive into utilizing Python libraries such as Pandas and Scikit-learn to analyze market trends and build predictive models based on historical economic data.
-                    </p>
-                    <div>
-                        <a href="#" class="text-blue-600 font-medium hover:text-blue-800 transition-colors inline-flex items-center">
-                            Read More <i class="fas fa-arrow-right ml-1 text-xs"></i>
-                        </a>
-                    </div>
-                </article>
+            <!-- Article 2 -->
+            <article class="border-b border-gray-100 pb-10">
+                <time datetime="2023-08-22" class="text-sm text-gray-500 block mb-1">August 22, 2023</time>
+                <h2 class="text-2xl font-bold text-gray-900 mb-3">
+                    <a href="#" class="hover:text-blue-700">Leveraging Python for Market Analysis</a>
+                </h2>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    [Placeholder text] A technical deep-dive into utilizing Python libraries such as Pandas and Scikit-learn to analyze market trends and build predictive models based on historical economic data.
+                </p>
+                <a href="#" class="text-blue-700 hover:underline text-sm font-medium">Read Article &rarr;</a>
+            </article>
 
-                <!-- Article Item 3 -->
-                <article class="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
-                    <div class="flex flex-col md:flex-row md:items-baseline justify-between mb-2">
-                        <h2 class="text-2xl font-bold text-slate-900 mb-2 md:mb-0">
-                            <a href="#" class="hover:text-blue-600 transition-colors">Reflections on the STEAM Summer Camp</a>
-                        </h2>
-                        <time datetime="2023-06-10" class="text-sm font-medium text-slate-500 whitespace-nowrap">June 10, 2023</time>
-                    </div>
-                    <p class="text-slate-600 mb-4 leading-relaxed">
-                        [Placeholder text] Personal insights and key takeaways from organizing a STEAM summer camp. Discussing the importance of early technical education and hands-on learning experiences.
-                    </p>
-                    <div>
-                        <a href="#" class="text-blue-600 font-medium hover:text-blue-800 transition-colors inline-flex items-center">
-                            Read More <i class="fas fa-arrow-right ml-1 text-xs"></i>
-                        </a>
-                    </div>
-                </article>
+            <!-- Article 3 -->
+            <article class="pb-4">
+                <time datetime="2023-06-10" class="text-sm text-gray-500 block mb-1">June 10, 2023</time>
+                <h2 class="text-2xl font-bold text-gray-900 mb-3">
+                    <a href="#" class="hover:text-blue-700">Reflections on the STEAM Summer Camp</a>
+                </h2>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    [Placeholder text] Personal insights and key takeaways from organizing a STEAM summer camp. Discussing the importance of early technical education and hands-on learning experiences.
+                </p>
+                <a href="#" class="text-blue-700 hover:underline text-sm font-medium">Read Article &rarr;</a>
+            </article>
 
-            </div>
         </div>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-white border-t border-slate-200 mt-auto py-8">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
-            <p class="text-slate-500 text-sm mb-4 md:mb-0">
-                &copy; <script>document.write(new Date().getFullYear())</script> Jonathan L. Tamen. All rights reserved.
+    <footer class="bg-white border-t border-gray-200 mt-auto py-8">
+        <div class="max-w-4xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center text-sm">
+            <p class="text-gray-500 mb-4 sm:mb-0">
+                &copy; <script>document.write(new Date().getFullYear())</script> Jonathan Tamen. All rights reserved.
             </p>
-            <div class="flex space-x-6">
-                <a href="https://github.com/jonathantamen" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-slate-800 transition-colors">
-                    <span class="sr-only">GitHub</span>
-                    <i class="fab fa-github text-xl"></i>
+            <div class="flex space-x-6 text-gray-500 text-lg">
+                <a href="https://github.com/jonathantamen" target="_blank" rel="noopener noreferrer" class="hover:text-gray-900 transition-colors" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/jonathantamen/" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-blue-600 transition-colors">
-                    <span class="sr-only">LinkedIn</span>
-                    <i class="fab fa-linkedin text-xl"></i>
+                <a href="https://www.linkedin.com/in/jonathantamen/" target="_blank" rel="noopener noreferrer" class="hover:text-gray-900 transition-colors" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
                 </a>
-                <a href="mailto:jonathan.tamen@gmail.com" class="text-slate-400 hover:text-red-500 transition-colors">
-                    <span class="sr-only">Email</span>
-                    <i class="fas fa-envelope text-xl"></i>
+                <a href="mailto:jonathan.tamen@gmail.com" class="hover:text-gray-900 transition-colors" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
                 </a>
             </div>
         </div>
