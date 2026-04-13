@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,7 +44,15 @@
 
         <!-- Projects List (Traditional Layout) -->
         <div class="space-y-12">
-            <!-- Projects will be added here -->
+            {% for project in site.projects %}
+            <div class="border-l-4 border-gray-900 pl-6 py-2">
+              <h2 class="text-2xl font-bold text-gray-900">{{ project.title }}</h2>
+              <p class="text-lg text-gray-600 mt-2">{{ project.description }}</p>
+              {% if project.link %}
+              <a href="{{ project.link }}" class="text-blue-700 hover:underline mt-4 inline-block">View Project &rarr;</a>
+              {% endif %}
+            </div>
+            {% endfor %}
         </div>
     </main>
 
