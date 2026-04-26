@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +15,7 @@
         }
     </style>
 </head>
+
 <body class="flex flex-col min-h-screen">
 
     <!-- Header -->
@@ -26,8 +28,11 @@
                 <nav class="flex space-x-6 items-center text-sm sm:text-base">
                     <a href="index.html" class="text-gray-600 hover:text-gray-900 transition-colors">About</a>
                     <a href="projects.html" class="text-gray-600 hover:text-gray-900 transition-colors">Projects</a>
-                    <a href="articles.html" class="font-semibold text-gray-900 border-b-2 border-gray-900 pb-1">Articles</a>
-                    <a href="/assets/resume.pdf" target="_blank" class="bg-gray-100 hover:bg-gray-200 text-gray-900 px-4 py-2 rounded font-medium transition-colors border border-gray-300">View CV</a>
+                    <a href="articles.html"
+                        class="font-semibold text-gray-900 border-b-2 border-gray-900 pb-1">Articles</a>
+                    <a href="/assets/resume.pdf" target="_blank"
+                        class="bg-gray-100 hover:bg-gray-200 text-gray-900 px-4 py-2 rounded font-medium transition-colors border border-gray-300">View
+                        CV</a>
                 </nav>
             </div>
         </div>
@@ -37,12 +42,36 @@
     <main class="flex-grow max-w-4xl mx-auto px-6 py-12 w-full">
         <div class="mb-10">
             <h1 class="text-3xl font-bold text-gray-900 mb-4">Articles & Publications</h1>
-            <p class="text-lg text-gray-600">Thoughts, research findings, and essays on economics, technology, and community building.</p>
+            <p class="text-lg text-gray-600">Thoughts, research findings, and essays on economics, technology, and
+                community building.</p>
         </div>
 
         <!-- Articles List -->
-        <div class="space-y-12">
-            <!-- Articles will be added here -->
+        <div class="grid gap-12">
+            <!-- Article Card 1 -->
+            <article class="group relative flex flex-col items-start">
+                <h2 class="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors mb-2">
+                    <a
+                        href="articles/How to spend a full day at North Beach Oceanside Park - A Miami Resident’s Guide.html">
+                        My first creative non-fiction piece: How to spend a full day at North Beach Oceanside Park - A
+                        Miami Resident’s Guide
+                    </a>
+                </h2>
+                <div class="flex items-center text-sm text-gray-500 mb-4 gap-4">
+                    <span>April 26, 2026</span>
+                    <span>•</span>
+                    <span>8 min read</span>
+                </div>
+                <p class="text-gray-600 leading-relaxed mb-4">
+                    A step by step guide to experiencing one of Miami Beachs most unique parks, right next to the beach.
+                </p>
+                <a href="articles/How to spend a full day at North Beach Oceanside Park - A Miami Resident’s Guide.html"
+                    class="text-blue-600 font-medium hover:underline flex items-center gap-1">
+                    Read article <i class="fas fa-chevron-right text-xs"></i>
+                </a>
+            </article>
+
+            <!-- More articles can be added here -->
         </div>
     </main>
 
@@ -50,16 +79,20 @@
     <footer class="bg-white border-t border-gray-200 mt-auto py-8">
         <div class="max-w-4xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center text-sm">
             <p class="text-gray-500 mb-4 sm:mb-0">
-                &copy; <script>document.write(new Date().getFullYear())</script> Jonathan Tamen. All rights reserved.
+                &copy;
+                <script>document.write(new Date().getFullYear())</script> Jonathan Tamen. All rights reserved.
             </p>
             <div class="flex space-x-6 text-gray-500 text-lg">
-                <a href="https://github.com/jonathantamen" target="_blank" rel="noopener noreferrer" class="hover:text-gray-900 transition-colors" aria-label="GitHub">
+                <a href="https://github.com/jonathantamen" target="_blank" rel="noopener noreferrer"
+                    class="hover:text-gray-900 transition-colors" aria-label="GitHub">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/jonathantamen/" target="_blank" rel="noopener noreferrer" class="hover:text-gray-900 transition-colors" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/in/jonathantamen/" target="_blank" rel="noopener noreferrer"
+                    class="hover:text-gray-900 transition-colors" aria-label="LinkedIn">
                     <i class="fab fa-linkedin"></i>
                 </a>
-                <a href="mailto:jonathan.tamen@gmail.com" class="hover:text-gray-900 transition-colors" aria-label="Email">
+                <a href="mailto:jonathan.tamen@gmail.com" class="hover:text-gray-900 transition-colors"
+                    aria-label="Email">
                     <i class="fas fa-envelope"></i>
                 </a>
             </div>
@@ -67,4 +100,5 @@
     </footer>
 
 </body>
+
 </html>
