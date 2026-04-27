@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title - Jonathan Tamen</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #ffffff;
+            color: #333333;
+        }
+
+        /* Custom styles for the article content to keep Word formatting looking good */
+        .article-content p {
+            margin-bottom: 1.5rem;
+            line-height: 1.75;
+            font-size: 1.125rem;
+        }
+
+        .article-content h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            color: #111827;
+        }
+
+        .article-content h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+            color: #111827;
+        }
+
+        .article-content ul,
+        .article-content ol {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+
+        .article-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .article-content b,
+        .article-content strong {
+            font-weight: 700;
+            color: #111827;
+        }
+
+        .article-content i,
+        .article-content em {
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body class="flex flex-col min-h-screen">
+
+    <!-- Header -->
+    <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto px-6 py-4">
+            <div class="flex flex-col sm:flex-row justify-between items-center">
+                <div class="mb-4 sm:mb-0">
+                    <a href="../index.html" class="text-2xl font-bold text-gray-900">Jonathan Tamen</a>
+                </div>
+                <nav class="flex space-x-6 items-center text-sm sm:text-base">
+                    <a href="../index.html" class="text-gray-600 hover:text-gray-900 transition-colors">About</a>
+                    <a href="../projects.html" class="text-gray-600 hover:text-gray-900 transition-colors">Projects</a>
+                    <a href="../articles.html"
+                        class="font-semibold text-gray-900 border-b-2 border-gray-900 pb-1">Articles</a>
+                    <a href="/assets/resume.pdf" target="_blank"
+                        class="bg-gray-100 hover:bg-gray-200 text-gray-900 px-4 py-2 rounded font-medium transition-colors border border-gray-300">View
+                        CV</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow max-w-3xl mx-auto px-6 py-12 w-full">
+        <!-- Back Link -->
+        <div class="mb-8">
+            <a href="../articles.html"
+                class="text-blue-600 hover:text-blue-800 flex items-center gap-2 text-sm font-medium">
+                <i class="fas fa-arrow-left"></i> Back to Articles
+            </a>
+        </div>
+
+        <!-- Article Header -->
+        <article>
+            <header class="mb-10">
+                <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+                    Article Title Goes Here
+                </h1>
+                <div class="flex items-center text-gray-500 text-sm gap-4">
+                    <span><i class="far fa-calendar-alt mr-2"></i> April 26, 2026</span>
+                    <span><i class="far fa-clock mr-2"></i> 5 min read</span>
+                </div>
+            </header>
+
+            <!-- Featured Image (Optional) -->
+            <!-- <div class="mb-10 rounded-xl overflow-hidden shadow-sm">
+                <img src="/assets/article-hero.jpg" alt="Hero image" class="w-full h-auto">
+            </div> -->
+
+            <!-- Article Body -->
+            <div class="article-content text-gray-800">
+                <!-- 
+<h1 class="code-line has-line-data" data-line-start="0" data-line-end="1"><a id="Closing_a_Loop_0"></a>Closing a Loop</h1>
+<p class="has-line-data" data-line-start="2" data-line-end="3">A shirt for a non-profit. One which seeks to instill confidence in young students through STEM education. It wraps around my body and not in the most comfortable way. It is a cheap, scratchy material that saved the organization some money. The sleeves are a little too short compared to how the rest of the shirt fits on my torso and sometimes ride up my arms. The logo – <strong>Helping Hands MB</strong> – is in the wrong font on this shirt but sits across the entire chest. A giant globe with a hand of many shades – to represent the diversity of people across the world - reaching towards the earth to signify that anyone can achieve anything with the right tools and confidence.</p>
+<p class="has-line-data" data-line-start="4" data-line-end="5">In the rest of the room, the air conditioning is fighting a battle against thirty-five people cramped too closely in too small of a classroom. So far, for now, it is winning and at least everyone has a seat. On the tables, there are batteries, wires, LED bulbs, and various other electric components strewn across the surfaces and surrounding them are children, ten and eleven years old, with a wide display of emotions. Some are excited at the chance to do something completely new.</p>
+<p class="has-line-data" data-line-start="6" data-line-end="7">They have never seen an electrical circuit before. Well, they have every day, but they never <em>realized</em> it. The excited ones had their chance to place the wires together and got the lightbulb to illuminate in blinking red. Others, looking more disappointed, have been waiting for their turn with no luck. The first in turn order to build the circuit is the luckiest: they get the control of placing the pieces together with their own hands, the anticipation of not knowing whether the circuit was correctly connected, and the ultimate satisfaction when they finally get it to work.</p>
+<p class="has-line-data" data-line-start="8" data-line-end="9">One child has not been able to get it to work yet. Jayden looks up at me and does not notice the wrong font on my shirt or irritation on my collar. Jayden sees my shirt, the giant globe, and assumes I am here to help. They lift the ‘completed’ circuit not-so-gently at the same time I lean over the table, so I only have a few inches in between my face and the mess of wires.</p>
+<p class="has-line-data" data-line-start="10" data-line-end="11">“This one is broken” Jayden says to me.</p>
+<p class="has-line-data" data-line-start="12" data-line-end="13">“Is it really?” The chances are slim to none. Everyone else got it to work and two new triple-A batteries will have enough charge to power the light for 50 hours continuously.<a href="#_ftn1">[1]</a></p>
+<p class="has-line-data" data-line-start="14" data-line-end="15">I quiz Jayden about the proper directional flow of electrons. If the electrons try to enter the “wrong” side of the LED, the bulb inside simply knows to block it (else it will break), so the circuit only works as a closed loop if the wires and battery are connected in the correct direction. Working together as a team, they learn together that electricity is a movement from the negative side, where negatively charged electrons are ready to leave, to the positive side, which pulls them in. Subsequently, Jayden and the rest of her team turn the handful of plastic and wires into red blinking light!</p>
+<p class="has-line-data" data-line-start="16" data-line-end="17">I see the light in their circuit, on their faces, and feel the glow inside me. While I straighten up and remember the uncomfortable shirt, I am also reminded of the good we do when helping one another solve a problem.</p>
+<p class="has-line-data" data-line-start="18" data-line-end="19">Read more about our work at <a href="www.helpinghandsmb.org">Helping Hands MB</a>.</p>
+<hr>
+<p class="has-line-data" data-line-start="20" data-line-end="21"><a href="#_ftnref1">[1]</a> The LED draws 20 milliamps to blink at any given moment. The batteries capacity is up to 1,000 milliamps for 1 hour, or 1 milliamps for 1,000 hours. 1,000 milliamps <em>hours</em> storage / 20 milliamps draw = 50 <em>hours</em></p>
+            </div>
+        </article>
+        <!-- Footer -->
+                <footer class="bg-white border-t border-gray-200 mt-auto py-8">
+                    <div class="max-w-4xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center text-sm">
+                        <p class="text-gray-500 mb-4 sm:mb-0">
+                            &copy;
+                            <script>document.write(new Date().getFullYear())</script> Jonathan Tamen. All rights
+                            reserved.
+                        </p>
+                        <div class="flex space-x-6 text-gray-500 text-lg">
+                            <a href="https://github.com/jonathantamen" target="_blank" rel="noopener noreferrer"
+                                class="hover:text-gray-900 transition-colors" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/jonathantamen/" target="_blank"
+                                rel="noopener noreferrer" class="hover:text-gray-900 transition-colors"
+                                aria-label="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="mailto:jonathan.tamen@gmail.com" class="hover:text-gray-900 transition-colors"
+                                aria-label="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </footer>
+
+</body>
+
+</html>
