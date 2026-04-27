@@ -1,5 +1,6 @@
 ---
 title: "Economics Honors Thesis"
-description: "Researching nonprofit financial practices and recession resiliency."
+description: "My undergraduate thesis exploring nonprofit financial practices that can improve their recession resiliency."
+link: "articles/Economics Honors Thesis.pdf"
 layout: null
 ---
