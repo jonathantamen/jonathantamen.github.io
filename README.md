@@ -1,6 +1,6 @@
 # Jonathan Tamen
-Clark University ‘26
-Economics
+
+Economics @ Clark University | Founder @ Helping Hands MB
 
 Email: [jonathan.tamen@gmail.com](jonathan.tamen@gmail.com)
 
