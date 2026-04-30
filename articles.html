@@ -53,74 +53,49 @@
             <h2 class="text-3xl font-bold text-gray-900 mb-4">My Writings</h2>
         </div>
 
-        <!-- Articles List -->
+        <!-- Articles List (auto-generated from _articles/ collection) -->
         <div class="grid gap-12">
-            <!-- Article Card 1 -->
+            {% assign sorted_articles = site.articles | sort: "date" | reverse %}
+            {% for article in sorted_articles %}
             <article class="group relative flex flex-col items-start">
                 <h2 class="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors mb-2">
-                    <a
-                        href="articles/How to spend a full day at North Beach Oceanside Park - A Miami Residents Guide.html">
-                        How to spend a full day at North Beach Oceanside Park - A Miami Resident’s Guide
+                    {% if article.pdf %}
+                    <a href="{{ article.pdf }}">
+                        {{ article.title }}
                     </a>
+                    {% else %}
+                    <a href="{{ article.url }}">
+                        {{ article.title }}
+                    </a>
+                    {% endif %}
                 </h2>
                 <div class="flex items-center text-sm text-gray-500 mb-4 gap-4">
-                    <span>January 14, 2026</span>
+                    {% if article.date %}
+                    <span>{{ article.date | date: "%B %-d, %Y" }}</span>
                     <span>•</span>
-                    <span>8 min read</span>
+                    {% endif %}
+                    {% if article.read_time %}
+                    <span>{{ article.read_time }}</span>
+                    {% endif %}
                 </div>
+                {% if article.summary %}
                 <p class="text-gray-600 leading-relaxed mb-4">
-                    My first creative non-fiction piece: a step by step guide to experiencing one of Miami Beachs most
-                    unique parks, right next to the beach.
+                    {{ article.summary }}
                 </p>
-                <a href="articles/How to spend a full day at North Beach Oceanside Park - A Miami Residents Guide.html"
+                {% endif %}
+                {% if article.pdf %}
+                <a href="{{ article.pdf }}"
+                    class="text-blue-600 font-medium hover:underline flex items-center gap-1">
+                    View PDF <i class="fas fa-file-pdf text-xs"></i>
+                </a>
+                {% else %}
+                <a href="{{ article.url }}"
                     class="text-blue-600 font-medium hover:underline flex items-center gap-1">
                     Read article <i class="fas fa-chevron-right text-xs"></i>
                 </a>
+                {% endif %}
             </article>
-
-            <!-- Article Card 2 -->
-            <article class="group relative flex flex-col items-start">
-                <h2 class="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors mb-2">
-                    <a href="articles/Seasonal plant.html">
-                        Seasonal Plant
-                    </a>
-                </h2>
-                <div class="flex items-center text-sm text-gray-500 mb-4 gap-4">
-                    <span>February 18, 2026</span>
-                    <span>•</span>
-                    <span>5 min read</span>
-                </div>
-                <p class="text-gray-600 leading-relaxed mb-4">
-                    A short story about a prayer plant named Spots and its time in London with me.
-                </p>
-                <a href="articles/Seasonal plant.html"
-                    class="text-blue-600 font-medium hover:underline flex items-center gap-1">
-                    Read article <i class="fas fa-chevron-right text-xs"></i>
-                </a>
-            </article>
-
-            <!-- Article Card 3 -->
-            <article class="group relative flex flex-col items-start">
-                <h2 class="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors mb-2">
-                    <a href="articles/Closing a Loop.html">
-                        Closing a Loop
-                    </a>
-                </h2>
-                <div class="flex items-center text-sm text-gray-500 mb-4 gap-4">
-                    <span>April 18, 2026</span>
-                    <span>•</span>
-                    <span>6 min read</span>
-                </div>
-                <p class="text-gray-600 leading-relaxed mb-4">
-                    An anecdote from one day volunteering with Helping Hands MB.
-                </p>
-                <a href="articles/Closing a Loop.html"
-                    class="text-blue-600 font-medium hover:underline flex items-center gap-1">
-                    Read article <i class="fas fa-chevron-right text-xs"></i>
-                </a>
-            </article>
-
-            <!-- More articles can be added here -->
+            {% endfor %}
         </div>
     </main>
 
