@@ -58,7 +58,7 @@
             {% assign sorted_articles = site.articles | sort: "date" | reverse %}
             {% for article in sorted_articles %}
             <article class="group relative flex flex-col items-start">
-                <h2 class="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors mb-2">
+                <h2 class="text-xl font-medium text-gray-900 group-hover:text-blue-600 transition-colors mb-2">
                     {% if article.pdf %}
                     <a href="{{ article.pdf }}">
                         {{ article.title }}

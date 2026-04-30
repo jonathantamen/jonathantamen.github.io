@@ -25,7 +25,7 @@ On a day that broke our rhythm, he paid attention to me beyond the bare requirem
 
 **_Spring_ – the season before summer**
 
-Today, we reunited after a month apart for 'winter break.' My leaves are still not what they used to be. Winter took a toll on me. Jonathan seems marginally more motivated. He notices my appearance and comments on it. With understanding he says to me "I know winter is hard. But I am gonna keep trying as long as you are trying."
+Today, we reunited after a month apart for 'winter break.' My leaves are still not what they used to be. Winter took a toll on me. Jonathan seems marginally more motivated. He notices my appearance and comments on it. With understanding, he says to me "I know winter is hard. But I am gonna keep trying as long as you are trying."
 
 My average day in Spring is not much different than last season but at least Jonathan places me outside on the warm days and talks to me about his feelings. He misunderstands what plant therapy is.
 
