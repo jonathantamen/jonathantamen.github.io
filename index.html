@@ -2,116 +2,194 @@
 ---
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jonathan Tamen</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            background-color: #ffffff;
-            color: #333333;
-        }
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+          Arial, sans-serif;
+        background-color: #ffffff;
+        color: #333333;
+      }
     </style>
-</head>
+  </head>
 
-<body class="flex flex-col min-h-screen">
-
-    <!-- Header -->
-    <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
-        <div class="max-w-4xl mx-auto px-6 py-4">
-            <div class="flex flex-col sm:flex-row justify-between items-center">
-                <div class="mb-4 sm:mb-0">
-                    <a href="https://jonathantamen.github.io/" class="text-2xl font-bold text-gray-900">Jonathan Tamen</a>
-                </div>
-                <nav class="flex space-x-6 items-center text-sm sm:text-base">
-                    <a href="https://jonathantamen.github.io/" class="font-semibold text-gray-900 border-b-2 border-gray-900 pb-1">About</a>
-                    <a href="projects.html" class="text-gray-600 hover:text-gray-900 transition-colors">Projects</a>
-                    <a href="articles.html" class="text-gray-600 hover:text-gray-900 transition-colors">Articles</a>
-                    <a href="/assets/resume.pdf" target="_blank"
-                        class="bg-gray-100 hover:bg-gray-200 text-gray-900 px-4 py-2 rounded font-medium transition-colors border border-gray-300">View
-                        CV</a>
-                </nav>
-            </div>
-        </div>
-    </header>
+  <body class="flex flex-col min-h-screen">
+    {% include header.html active="about" %}
 
     <!-- Main Content -->
     <main class="flex-grow max-w-4xl mx-auto px-6 py-12 w-full">
-        <!-- Hero Section -->
-        <div class="flex flex-col md:flex-row gap-8 md:gap-12 items-center md:items-start mb-16">
-            <div class="flex-1 order-2 md:order-1 text-center md:text-left">
-                <div class="mb-4">
-                    <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">Jonathan Tamen</h1>
-                    <p class="text-lg text-gray-600 mb-8">Economics @ <a href="https://www.clarku.edu/" class="text-blue-700 hover:underline">Clark University</a> | Founder @ <a href="https://www.helpinghandsmb.org" class="text-blue-700 hover:underline">Helping Hands MB</a></p>
-                    
-                    <div class="flex flex-wrap gap-4 items-center justify-center md:justify-start">
-                        <a href="projects.html" class="inline-flex items-center gap-2 bg-blue-700 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-800 transition-colors shadow-sm">
-                            View My Work <i class="fas fa-arrow-right"></i>
-                        </a>
-                        <a href="mailto:jonathan.tamen@gmail.com" class="inline-flex items-center gap-2 border-2 border-blue-700 text-blue-700 px-6 py-3 rounded-lg font-medium hover:bg-blue-50 transition-colors">
-                            <i class="fas fa-envelope"></i> Email
-                        </a>
-                        
-                        <!-- Social Buttons -->
-                        <div class="flex gap-3 ml-2">
-                            <a href="https://www.linkedin.com/in/jonathantamen/" target="_blank" rel="noopener noreferrer" 
-                               class="w-12 h-12 flex items-center justify-center rounded-full border-2 border-gray-200 text-gray-600 hover:border-blue-700 hover:text-blue-700 transition-all" title="LinkedIn">
-                                <i class="fab fa-linkedin-in text-xl"></i>
-                            </a>
-                            <a href="https://github.com/jonathantamen" target="_blank" rel="noopener noreferrer" 
-                               class="w-12 h-12 flex items-center justify-center rounded-full border-2 border-gray-200 text-gray-600 hover:border-gray-900 hover:text-gray-900 transition-all" title="GitHub">
-                                <i class="fab fa-github text-xl"></i>
-                            </a>
-                            <a href="https://instagram.com/jonathantamen" target="_blank" rel="noopener noreferrer" 
-                               class="w-12 h-12 flex items-center justify-center rounded-full border-2 border-gray-200 text-gray-600 hover:border-pink-600 hover:text-pink-600 transition-all" title="Instagram">
-                                <i class="fab fa-instagram text-xl"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+      <!-- Hero Section -->
+      <div
+        class="flex flex-col md:flex-row gap-8 md:gap-12 items-center md:items-start mb-16"
+      >
+        <div class="flex-1 order-2 md:order-1 text-center md:text-left">
+          <div class="mb-4">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
+              Jonathan Tamen
+            </h1>
+            <p class="text-lg text-gray-600 mb-8">
+              Economics @
+              <a
+                href="https://www.clarku.edu/"
+                class="text-blue-700 hover:underline"
+                >Clark University</a
+              >
+              | Founder @
+              <a
+                href="https://www.helpinghandsmb.org"
+                class="text-blue-700 hover:underline"
+                >Helping Hands MB</a
+              >
+            </p>
+
+            <div
+              class="flex flex-wrap gap-4 items-center justify-center md:justify-start"
+            >
+              <a
+                href="projects.html"
+                class="inline-flex items-center gap-2 bg-blue-700 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-800 transition-colors shadow-sm"
+              >
+                View My Work <i class="fas fa-arrow-right"></i>
+              </a>
+              <a
+                href="mailto:jonathan.tamen@gmail.com"
+                class="inline-flex items-center gap-2 border-2 border-blue-700 text-blue-700 px-6 py-3 rounded-lg font-medium hover:bg-blue-50 transition-colors"
+              >
+                <i class="fas fa-envelope"></i> Email
+              </a>
+
+              <!-- Social Buttons -->
+              <div class="flex gap-3 ml-2">
+                <a
+                  href="https://www.linkedin.com/in/jonathantamen/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="w-12 h-12 flex items-center justify-center rounded-full border-2 border-gray-200 text-gray-600 hover:border-blue-700 hover:text-blue-700 transition-all"
+                  title="LinkedIn"
+                >
+                  <i class="fab fa-linkedin-in text-xl"></i>
+                </a>
+                <a
+                  href="https://github.com/jonathantamen"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="w-12 h-12 flex items-center justify-center rounded-full border-2 border-gray-200 text-gray-600 hover:border-gray-900 hover:text-gray-900 transition-all"
+                  title="GitHub"
+                >
+                  <i class="fab fa-github text-xl"></i>
+                </a>
+                <a
+                  href="https://instagram.com/jonathantamen"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="w-12 h-12 flex items-center justify-center rounded-full border-2 border-gray-200 text-gray-600 hover:border-pink-600 hover:text-pink-600 transition-all"
+                  title="Instagram"
+                >
+                  <i class="fab fa-instagram text-xl"></i>
+                </a>
+              </div>
             </div>
-            
-            <div class="flex-shrink-0 order-1 md:order-2 w-48 h-48 sm:w-56 sm:h-56 rounded-full overflow-hidden shadow-lg border-4 border-gray-50 mx-auto md:mx-0 mt-4 md:mt-0">
-                <img src="/assets/profile_pic.jpg" alt="Jonathan Tamen" class="w-full h-full object-cover bg-gray-100">
-            </div>
+          </div>
         </div>
 
-        <!-- Biography Section -->
-        <div class="prose prose-lg text-gray-700 leading-relaxed max-w-none mb-16">
-            <h2 class="text-2xl font-bold text-gray-900 mb-6">Biography</h2>
-            
-            <p class="mb-6">
-                Jonathan Tamen is a young changemaker, nonprofit founder, and local STEM education advocate from Miami, Florida. As a high school student, teaming up with his twin brother and several other classmates, Jonathan founded <a href="https://www.helpinghandsmb.org" class="text-blue-700 hover:underline">Helping Hands MB</a> to expand access to STEM education for young students, especially from underprivileged backgrounds, in order to improve their academic confidence.
-            </p>
-            <p class="mb-6">
-                Each year, more than 300 students participate in their projects, such as a free STEM enrichment summer camp offering bilingual instruction and hands-on activities that build academic skills and confidence.
-            </p>
-            <p class="mb-6">
-                A grandson of Holocaust survivors, Jonathan is inspired by his grandmother’s message in her <a href="https://youtu.be/ilrp4YFiBYc?si=OoCXphD-PrjuXwrE" target="_blank" class="text-blue-700 hover:underline">Shoah Foundation interview</a> to ‘spread kindness’ and hopes to build a better world where no student feels less than.
-            </p>
-            <p class="mb-0">
-                Now, Jonathan is a graduating senior at <a href="https://www.clarku.edu/" class="text-blue-700 hover:underline">Clark University</a> and is attending law school this coming fall, where he plans to pursue a career in education policy and working in the public interest.
-            </p>
+        <div
+          class="flex-shrink-0 order-1 md:order-2 w-48 h-48 sm:w-56 sm:h-56 rounded-full overflow-hidden shadow-lg border-4 border-gray-50 mx-auto md:mx-0 mt-4 md:mt-0"
+        >
+          <img
+            src="/assets/profile_pic.jpg"
+            alt="Jonathan Tamen"
+            class="w-full h-full object-cover bg-gray-100"
+          />
         </div>
+      </div>
 
-        <!-- Artist Statement Section -->
-        <div class="prose prose-lg text-gray-700 leading-relaxed max-w-none mb-12">
-            <h2 class="text-2xl font-bold text-gray-900 mb-6">Artist Statement</h2>
-            
-            <p class="mb-6">
-                I care a lot about democratizing education. My goal is to create pieces that are useful, inspiring, or at the very least, educational. I try to experiment with the physical form of my pieces while maintaining a clear, and non-fiction-like flow of information.
-            </p>
-            <p class="mb-6">
-                Across all my pieces, I write about my passions - whether projects I am working on, the community I grew up in, or new things I am trying out. For me, writing sometimes serves as a tool for self-clarification; I often find myself conflicted regarding my passions, asking myself: "Am I doing any good for this person?" or "Do I genuinely care about this thing?” My writing helps me to clarify and remind myself of who I want to be.
-            </p>
-            <p class="mb-0">
-                Regarding my process, I always start with a blank piece of paper. Even if I am writing <em>code</em>, I will plan it out on paper first. From there, I bounce around and may start on the ending then jump to the beginning then feel inspired to finish the climax. I start with an outline and gradually refine sections at random from there.
-            </p>
-        </div>
+      <!-- Biography Section -->
+      <div
+        class="prose prose-lg text-gray-700 leading-relaxed max-w-none mb-16"
+      >
+        <h2 class="text-2xl font-bold text-gray-900 mb-6">Biography</h2>
+
+        <p class="mb-6">
+          Jonathan Tamen is a young changemaker, nonprofit founder, and local
+          STEM education advocate from Miami, Florida. As a high school student,
+          teaming up with his twin brother and several other classmates,
+          Jonathan founded
+          <a
+            href="https://www.helpinghandsmb.org"
+            class="text-blue-700 hover:underline"
+            >Helping Hands MB</a
+          >
+          to expand access to STEM education for young students, especially from
+          underprivileged backgrounds, in order to improve their academic
+          confidence.
+        </p>
+        <p class="mb-6">
+          Each year, more than 300 students participate in their projects, such
+          as a free STEM enrichment summer camp offering bilingual instruction
+          and hands-on activities that build academic skills and confidence.
+        </p>
+        <p class="mb-6">
+          A grandson of Holocaust survivors, Jonathan is inspired by his
+          grandmother’s message in her
+          <a
+            href="https://youtu.be/ilrp4YFiBYc?si=OoCXphD-PrjuXwrE"
+            target="_blank"
+            class="text-blue-700 hover:underline"
+            >Shoah Foundation interview</a
+          >
+          to ‘spread kindness’ and hopes to build a better world where no
+          student feels less than.
+        </p>
+        <p class="mb-0">
+          Now, Jonathan is a graduating senior at
+          <a
+            href="https://www.clarku.edu/"
+            class="text-blue-700 hover:underline"
+            >Clark University</a
+          >
+          and is attending law school this coming fall, where he plans to pursue
+          a career in education policy and working in the public interest.
+        </p>
+      </div>
+
+      <!-- Artist Statement Section -->
+      <div
+        class="prose prose-lg text-gray-700 leading-relaxed max-w-none mb-12"
+      >
+        <h2 class="text-2xl font-bold text-gray-900 mb-6">Artist Statement</h2>
+
+        <p class="mb-6">
+          I care a lot about democratizing education. My goal is to create
+          pieces that are useful, inspiring, or at the very least, educational.
+          I try to experiment with the physical form of my pieces while
+          maintaining a clear, and non-fiction-like flow of information.
+        </p>
+        <p class="mb-6">
+          Across all my pieces, I write about my passions - whether projects I
+          am working on, the community I grew up in, or new things I am trying
+          out. For me, writing sometimes serves as a tool for
+          self-clarification; I often find myself conflicted regarding my
+          passions, asking myself: "Am I doing any good for this person?" or "Do
+          I genuinely care about this thing?” My writing helps me to clarify and
+          remind myself of who I want to be.
+        </p>
+        <p class="mb-0">
+          Regarding my process, I always start with a blank piece of paper. Even
+          if I am writing <em>code</em>, I will plan it out on paper first. From
+          there, I bounce around and may start on the ending then jump to the
+          beginning then feel inspired to finish the climax. I start with an
+          outline and gradually refine sections at random from there.
+        </p>
+      </div>
     </main>
 
     {% include footer.html %}
